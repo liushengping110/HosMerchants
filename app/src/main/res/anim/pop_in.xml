@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity显示时的平移动画 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<translate android:duration="300"-->
+        <!--android:fromYDelta="100%"-->
+        <!--android:toYDelta="0%">-->
+    <!--</translate>-->
+    <alpha android:fromAlpha="0.2"
+        android:duration="300"
+        android:toAlpha="1.0"/>
+
+</set>

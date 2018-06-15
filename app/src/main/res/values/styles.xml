@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- my loading dialog -->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- popup window 显示消失动画-->
+    <style name="PopWindowAnimStyle">
+        <item name="android:windowShowAnimation">@anim/dialog_enter</item>
+        <!-- 指定显示的动画xml  -->
+        <item name="android:windowHideAnimation">@anim/dialog_exit</item>
+        <!-- 指定消失的动画xml  -->
+    </style>
+
+    <!--dialog 发布商品-->
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+    <!--dialog 发布商品-->
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+    <!--baseDialog-->
+    <style name="dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:windowIsTranslucent">true</item><!-- 设置底层可见 -->
+    </style>
+    <!--商品点击弹窗-->
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <!--商品详情页面text样式-->
+    <style name="ExToolBarText">
+        <item name="android:textColor">@color/text_improt</item>
+        <item name="android:textSize">60px</item>
+    </style>
+
+    <!--商品详情页面text样式-->
+    <style name="CoToolBarText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">55px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tv_price">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/price_red</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NoTitleTranslucentTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent_bg</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="toolbarStyle">@style/CustomToolbar</item>
+    </style>
+    <style name="CustomToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性边距为0dp-->
+    </style>
+    <!--商品页面tabLayout文本-->
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/text_cs</item>
+    </style>
+    <!--单个商铺类别toolBar字体大小-->
+    <style name="SingleStoreToolBarText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">55px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--单类型商铺类别页面ToolBar-->
+    <style name="OverFlowMenuTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="overlapAnchor">false</item>
+    </style>
+    <!--单个商铺类别中二级分类名样式-->
+    <style name="SingleStoreTypeText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_cs</item>
+    </style>
+</resources>

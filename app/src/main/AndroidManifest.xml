@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="wizrole.hosmerchants">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="wizrole.hosmerchants.base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:icon,android:theme"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--主页-->
+        <activity android:name=".activity.MainActivity"
+            android:launchMode="singleTask"/>
+        <!--登录页面-->
+        <activity android:name=".my.view.LoginActivity"/>
+        <!--注册-->
+        <activity android:name=".my.view.RegistActivity"/>
+        <!--验证邮箱-->
+        <activity android:name=".my.view.CheckEMailActivity"/>
+        <!--商品、店铺搜索页面-->
+        <activity android:name=".merchants.view.SearchActivity"/>
+        <!--商品发布页面-->
+        <activity android:name=".release.view.GoodsTypeActivity"/>
+        <!--商品发布***商品分类列表页面-->
+        <activity android:name=".release.view.ReleaseGoodsActivity" />
+        <!--我的资料-->
+        <activity android:name=".my.view.MyInforActivity"/>
+        <!--我的店铺-->
+        <activity android:name=".my.view.MyStoreInforActivity"/>
+        <!--店铺商品列表页面-->
+        <activity android:name=".merchants.view.MyStoreViewActivity"/>
+        <!--店铺列表-->
+        <activity android:name=".my.view.MyStoreListActivity"/>
+        <!--店铺类别-->
+        <activity android:name=".my.view.StoreCateActivity"/>
+        <!--图片预览页面-->
+        <activity android:name=".activity.ImageLookActivity"/>
+        <!--商品预览-->
+        <!--商品管理菜单-->
+        <activity android:name=".admin.view.GoodsInforMenuActivity"/>
+        <!--修改所有商品信息-->
+        <activity android:name=".admin.view.ChangeDelGoodsInforActivity"/>
+        <!--当个商品信息页面-->
+        <activity android:name=".admin.view.SingleGoodsInforActivity"
+            android:theme="@style/NoTitleTranslucentTheme"/>
+        <!--单个商品的所有评价-->
+        <activity android:name=".admin.view.MoreEvlautListActivity"/>
+        <!--设置中心-->
+        <activity android:name=".my.view.SettingsActivity"/>
+        <!--商品搜索页面-->
+        <activity android:name=".merchants.view.GoodsSearchActivity"/>
+        <!--单钟类型商品列表页面-->
+        <activity android:name=".merchants.view.SingleStoreTypeActivity"/>
+        <!--出院出行商户信息页面-->
+        <activity android:name=".my.view.TravelStoreActivity"/>
+        <!--商铺二级分类-->
+        <activity android:name=".my.view.StoreSecondCateActivity"/>
+        <!--月嫂护工页面-->
+        <activity android:name=".my.view.NursingWorkActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_mian"
+    android:layout_width="match_parent"
+    android:layout_height="112px"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="110px">
+        <!--1-->
+        <RelativeLayout
+            android:id="@+id/rel_tabl_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tab1_one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:padding="10px"
+                android:gravity="center"
+                android:text="商家类型"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_center" />
+
+            <ImageView
+                android:id="@+id/img_one_bottom"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_toRightOf="@id/tab1_one"
+                android:layout_centerInParent="true"
+                android:src="@drawable/down" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_tabl_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tabl_two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10px"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="好评优先"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_center" />
+            <ImageView
+                android:id="@+id/img_two_bottom"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/tabl_two"
+                android:src="@drawable/down" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/danhui"
+        />
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/main_text_sel"
+            android:fitsSystemWindows="true"/>
+        <include
+            layout="@layout/title_back"
+            />
+        <LinearLayout
+            android:id="@+id/lin_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_bg"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                app:tabMode="scrollable"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                app:tabTextAppearance="@style/SingleStoreTypeText"
+                app:tabSelectedTextColor="@color/bule"
+                app:tabTextColor="@color/text_zw"
+                app:tabIndicatorColor="@color/bule"
+                app:tabIndicatorHeight="1dp"
+                android:paddingBottom="0.3dp"
+                android:layout_height="35dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/huise"
+                />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_wifi_err"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/img_net_err"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/text_err_agagin_center"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90px"
+            android:textSize="@dimen/text_content"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</RelativeLayout>

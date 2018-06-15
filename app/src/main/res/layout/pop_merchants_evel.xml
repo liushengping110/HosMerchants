@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+        <TextView
+            android:id="@+id/pop_item_hp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="@dimen/text_cs"
+            android:text="好评优先"
+            android:background="@drawable/item_lock"
+            android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/huise"
+            />
+        <TextView
+            android:id="@+id/pop_item_cp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="@dimen/text_cs"
+            android:text="差评优先"
+            android:background="@drawable/item_lock"
+            android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            />
+    </LinearLayout>
+</LinearLayout>

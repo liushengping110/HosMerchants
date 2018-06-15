@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/bule"
+              android:layout_width="match_parent"
+              android:layout_height="100px">
+
+    <LinearLayout
+        android:id="@+id/lin_back"
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        >
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:background="@drawable/back_lock"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="45px"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="55px"
+        android:layout_weight="1"
+        />
+    <RelativeLayout
+        android:layout_width="95dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_right"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:textSize="45px"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+</LinearLayout>

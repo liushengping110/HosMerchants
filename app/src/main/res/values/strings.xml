@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">生活服务商家版</string>
+    <string name="net_err">网络连接失败，请检查网络</string>
+    <string name="try_again">重新加载</string>
+    <string name="null_data">当前暂无数据</string>
+    <string name="scroll_behavior">@string/appbar_scrolling_view_behavior</string>
+    <string name="detail_header_behavior">wizrole.hosmerchants.admin.view.singlegoods.DetailHeaderBehavior</string>
+    <string name="cyms">餐饮美食</string>
+    <string name="csbl">超市便利</string>
+    <string name="tpyp">甜品饮品</string>
+    <string name="sgsx">水果生鲜</string>
+    <string name="xhhh">鲜花花卉</string>
+    <string name="cycx">出院出行</string>
+    <string name="yshg">月嫂护工</string>
+</resources>

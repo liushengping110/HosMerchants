@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@color/bule"
+        android:fitsSystemWindows="true"
+        />
+    <include
+        layout="@layout/title_back"/>
+    <LinearLayout
+        android:id="@+id/frag_my_safe"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:text="安全设置"
+            android:layout_weight="1"
+            android:textSize="45px" />
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_gravity="center"
+            android:src="@drawable/turn_right"
+            android:layout_marginRight="10px"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/danhui"
+        />
+    <LinearLayout
+        android:id="@+id/frag_my_appversion"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:text="版本更新"
+            android:layout_weight="1"
+            android:textSize="45px" />
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_gravity="center"
+            android:src="@drawable/turn_right"
+            android:layout_marginRight="10px"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/danhui"
+        />
+    <LinearLayout
+        android:id="@+id/frag_my_zhuxiao"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:text="账号注销"
+            android:layout_weight="1"
+            android:textSize="45px" />
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_gravity="center"
+            android:src="@drawable/turn_right"
+            android:layout_marginRight="10px"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/danhui"
+        />
+</LinearLayout>
